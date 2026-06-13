@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/playr2.css">
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="left">
+    <video id="video_player">
+        <source id="video_src" src="https://videos.pexels.com/video-files/3971351/3971351-hd_1280_720_25fps.mp4"></source>
+    </video>
+    <div id="progress_box">
+        <div id="progress_bar"></div>
+    </div>
+     <div id="control">
+        <div id="timing">
+            <p id="video_timing">00:00/00:00</p>
+        </div>
+        <div id="play_tools">
+            <i class="fa-solid fa-backward" id="left_btn"></i>
+            <i class="fa-sharp fa-regular fa-circle-play" id="play_btn"></i>
+            <i class="fa-solid fa-forward" id="right_btn"></i>
+        </div>
+        <div id="other_tools">
+            <div id="vol_box">
+                <input type="range" min="0" max="1" step="0.01" id="volume_control" style="display: none;">
+            <i class="fas fa-volume-up" id="volume"></i>
+
+            </div>
+            <div id="speed_box">
+                <input type="range" min="0" max="2" step="0.25" id="speed_control" style="display: none;">
+            <i class="fa-solid fa-gauge-high" id="speed_icon"></i>
+            
+            </div>
+            <i class="fas fa-expand" id="full_scureen"></i>
+        </div>
+     </div> 
+   </div>
+  
+   <div id="right">
+    <div id="top">
+        <h3>Playlist</h3> 
+
+        <input type="search" placeholder="Search Your Video Here..." id="search">
+        <i class="fas fa-plus-circle" id="open_video_box_btn"></i>
+        <div id="add_video_box">
+            <h2 id=""> Add Video</h2>
+            <form>
+            <input type="text" placeholder="Enter Your Video Name..." id="video_name">
+            <input type="text" placeholder="Enter Your Video Link..." id="video_link">
+            <button type="submit" id="add_video_btn">Add</button>
+            </form>
+
+        </div>
+    </div>
+    <div id="bottom">
+      
+    </div>
+   </div> 
+
+   <script src="js/play.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+#page_cover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(127,0,255);
+   background: linear-gradient(90deg, rgba(127,0,255,0.15449929971988796) 35%, rgba(225,0,255,0.14049369747899154) 100%);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10000;
+   }
+
+   #profile_box{
+    width: 300px;
+    height: auto;
+    background-color:white ;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+#profile_icon{
+    font-size: 120px;
+    color: #ccc;
+    position: absolute;
+    top: 25px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+#profile_upload{
+    width: 140px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0;
+}
+
+#profile_name{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+#next{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+font-family: 'Ubuntu',sans-serif;
+outline: none;
+cursor: pointer;
+margin-top: 20px;
+display: none;
+}
+/* start the code main profile with contact , plyer and logout */
+#main_profile_page{
+    background: rgb(127,0,255);
+    background: linear-gradient(90deg, rgba(127,0,255,0.15449929971988796) 35%, rgba(225,0,255,0.14049369747899154) 100%);
+}
+#profile_header{
+    width: 100%;
+    height: 150px;
+    background-image: url(../image/page_bg2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#profile_picture{
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80px;
+}
+
+#profile_username{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+#app{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media(max-width:576px)
+{
+    #app{
+        flex-direction: column;
+        height: 100%;
+    }
+
+}
+
+#contact,#player,#logout{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+#contact:hover,#player:hover,#logout:hover{
+    width: 200px;
+    height: 170px;
+    box-shadow: 0px 0px 15px #ccc;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#contact i ,#player i,#logout i{
+    font-size: 45px;
+    color: purple;
+ 
+}
+
+#contact p,#player p,#logout p{
+    font-size: 25px;
+    color: purple;
+    font-family: 'Ubuntu',sans-serif;
+    margin-top: 7px;
+}
+
+#profile_footer{
+    width: 100%;
+    height: 70px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile_footer p{
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+}
+/* end the code main profile with contact , plyer and logout */
+
+
+   
